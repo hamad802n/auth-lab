@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> New Entry </title>
+</head>
+<body>
+    
+
+
+
+
+<%- include('../partials/navbar')%>
+<h1>  New Entry</h1>
+
+
+
+
+  <form action="/entries" method="POST">
+        <label>Title:</label>
+        <input type="text" name="title">
+
+        <label>Entry:</label>
+        <textarea name="entryBody"></textarea>
+
+        <label>Public?</label>
+        <select name="isPublic">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+        </select>
+
+        <button type="submit">Create</button>
+    </form>
+
+</body>
+</html>
